@@ -81,8 +81,12 @@ WSGI_APPLICATION = 'scooter_rental.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'cityscoot',  # Имя базы данных
+        'USER': 'admin',  # Ваш пользователь
+        'PASSWORD': 'admin',  # Пароль к базе данных
+        'HOST': 'localhost',  # Хост, где запущен PostgreSQL
+        'PORT': '5432',  # Порт PostgreSQL (по умолчанию 5432)
     }
 }
 
