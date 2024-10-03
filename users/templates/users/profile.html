@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>Личный кабинет</h2>
+<p>ФИО: {{ user.username }}</p>
+<p>Почта: {{ user.email }}</p>
+<p>Номер телефона: {{ user.phone_number }}</p>
+<p>Фотография удостоверения (лицевая сторона): <img src="{{ user.id_photo_front.url }}" alt="Фото лицевой стороны"></p>
+<p>Фотография удостоверения (оборотная сторона): <img src="{{ user.id_photo_back.url }}" alt="Фото оборотной стороны"></p>
+</body>
+</html>
